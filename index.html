@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Material Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz App</title>
+</head>
+
+<body>
+  <!-- Configuration Section -->
+  <div class="container">
+    <h2 class="config-title">Quiz Configuration</h2>
+    <!-- Category Select -->
+    <div class="config-option">
+      <h4 class="option-title">Select Category</h4>
+      <div class="category-options">
+        <button class="category-option active">Programming</button>
+        <button class="category-option">Geography</button>
+        <button class="category-option">Mathematics</button>
+        <button class="category-option">Entertainment</button>
+      </div>
+    </div>
+
+    <!-- Question Count Select -->
+    <div class="config-option">
+      <h4 class="option-title">No. of Questions</h4>
+      <div class="question-options">
+        <button class="question-option">5</button>
+        <button class="question-option active">10</button>
+        <button class="question-option">15</button>
+        <button class="question-option">20</button>
+      </div>
+    </div>
+    <button class="start-quiz-btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="quiz-container">
+    <header class="quiz-header">
+      <h2 class="quiz-title">Quiz Application</h2>
+      <div class="quiz-timer">
+        <span class="material-symbols-outlined">timer</span>
+        <p class="timer-duration">15s</p>
+      </div>
+    </header>
+    <div class="quiz-content">
+      <h1 class="quiz-question">Question text will appear here</h1>
+      <ul class="answer-question">
+        <!-- Answer options dynamically আসবে JS দিয়ে -->
+      </ul>
+    </div>
+    <div class="quiz-footer">
+      <p class="question-status"><b>1</b> of <b>10</b> questions</p>
+      <button class="next-question-btn">
+        Next
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Result Section -->
+  <div class="result-container">
+    <h2 class="result-title">Quiz Completed 🎉</h2>
+    <p class="result-score">You got <b>0</b> out of <b>0</b></p>
+    <p class="result-percent">Score: <b>0%</b></p>
+    <p class="result-message">Well Done! 👍</p>
+    <button class="restart-btn">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
